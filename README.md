@@ -32,8 +32,61 @@ lists files that are normally hidden.
 ### cd .
 Note: typing cd with no argument always returns you to your home directory. This is very useful if you are lost in the file system.
 ### pwd (print working directory)
+### ls backups
+### cd ~	
+change to home-directory
+### cp (copy)
+cp file1 file2 is the command which makes a copy of file1 in the current working directory and calls it file2
+firstly you have to reach the directory in which you want to copy then,cp "write full path of file you want to copy" "new name of file"
+### mv file1 file2 moves (or renames) file1 to file2(move in existing directoy)
+mv /home/diiiiisha/Downloads/mnn mvv
+mv "write full path of file you want to copy" "new name of file"
+### rm (remove), rmdir (remove directory)
+### clear (clear screen) 
+### cat (concatenate)
+The command cat can be used to display the contents of a file on the screen. cat disha.txt
+### less
+The command less writes the contents of a file onto the screen a page at a time. Type
+% less science.txt
+Press the [space-bar] if you want to see another page, and type [q] if you want to quit reading. As you can see, less is used in preference to cat for long files.
+### head
+The head command writes the first ten lines of a file to the screen.
+First clear the screen then type
+% head science.txt
+### tail
+The tail command writes the last ten lines of a file to the screen.
+Clear the screen and type
+% tail science.txt
+### Simple searching using less
+Using less, you can search though a text file for a keyword (pattern). For example, to search through science.txt for the word 'science', type
+% less science.txt
+then, still in less, type a forward slash [/] followed by the word to search
+/science
+### grep (don't ask why it is called grep)
+grep is one of many standard UNIX utilities. It searches files for specified words or patterns. First clear the screen, then type
 
+% grep Science science.txt
 
+The grep command is case sensitive; it distinguishes between Science and science.
+
+To ignore upper/lower case distinctions, use the -i option, i.e. type
+
+% grep -i science science.txt
+
+To search for a phrase or pattern, you must enclose it in single quotes (the apostrophe symbol). For example to search for spinning top, type
+
+% grep -i 'spinning top' science.txt
+
+Some of the other options of grep are:
+
+-v display those lines that do NOT match
+-n precede each matching line with the line number
+-c print only the total count of matched lines
+
+Try some of them and see the different results. Don't forget, you can use more than one option at a time. For example, the number of lines without the words science or Science is
+
+% grep -ivc science science.txt
+### wc (word count)
 
 
 
