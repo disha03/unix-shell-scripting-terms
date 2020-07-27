@@ -22,3 +22,38 @@ Unix File Structure
 In the diagram above, we see that the home directory of the undergraduate student "ee51vn" contains two sub-directories (docs and pics) and a file called report.doc.
 
 The full path to the file report.doc is "/home/its/ug1/ee51vn/report.doc"
+## Commands
+### ls 
+lists the contents of your current working directory.ls does not, in fact, cause all the files in your home directory to be listed, but only those ones whose name does not begin with a dot (.) Files beginning with a dot (.) are known as hidden files and usually contain important program configuration information. They are hidden because you should not change them unless you are very familiar with UNIX!!!
+### ls -a 
+lists files that are normally hidden.
+### mkdir (make directory)
+### cd (change directory)
+### cd .
+Note: typing cd with no argument always returns you to your home directory. This is very useful if you are lost in the file system.
+### pwd (print working directory)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
