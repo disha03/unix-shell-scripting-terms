@@ -87,9 +87,15 @@ Try some of them and see the different results. Don't forget, you can use more t
 
 % grep -ivc science science.txt
 ### wc (word count)
-
-
-
+### histor (list of used command)
+### free -m(total/free ram size)
+### echo $PATH(user difed path,these paths are easy understood by systems)
+### export PATH={PATH}:/home/ec2-user/usedjfj/bin
+(this add this mentioned path in system path so u can find this path by echo $PATH command because it add as system path now,but it is exporetd temporary,whe we type exit logout then this additional path is gone)
+To done this permanently you have to add it in .bash_profile(open it by vim .bash_profile
+$HOME/bin/add bath here
+now run this bash_file --->  source .bash_profile) 
+now,it add permanently) 
 
 
 
