@@ -1,0 +1,6 @@
+if you want to use your shell in any location then move it to /usr/bin
+first reach thefolder where youer .sh file then use "sudo mv abc.sh /usr/bin/"
+
+if you want to execute ls ommand then write "echo "$(ls)" in ur shell
+
+dont forget to use "chmod 755 abc.sh" before run the shell
